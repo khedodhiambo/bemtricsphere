@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>B$E Metricsphere | Business Intelligence & Analytics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://kit.fontawesome.com/e07da26286.js" crossorigin="anonymous"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!--- Custom CSS-->
+  <link href="./css/stylesheet.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+
+  <!-- Dark Mode Toggle -->
+  <button class="toggle-dark" onclick="toggleDarkMode()">🌓 Toggle Mode</button>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">B$E Metricsphere</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 hero-content">
+          <h1 class="animate__animated animate__fadeInDown">Transforming Data Into Strategic Insights</h1>
+          <p class="animate__animated animate__fadeIn animate__delay-1s">B$E Metricsphere empowers organizations across Africa with cutting-edge Business Intelligence and Analytics solutions that drive efficiency, productivity, and sustainable growth.</p>
+          <div class="animate__animated animate__fadeIn animate__delay-2s">
+            <a href="#contact" class="btn btn-primary me-2">Get Started</a>
+            <a href="#services" class="btn btn-outline-light">Our Services</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block animate__animated animate__fadeInRight animate__delay-1s">
+          <img src="https://via.placeholder.com/500x400/343a40/ecf0f1?text=Data+Analytics" alt="Data Analytics" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+    <!--- Metrics counter-->
+    <!-- Add to Hero Section -->
+<div class="metrics-counter animate__animated animate__fadeIn animate__delay-2s">
+  <div class="metric">
+    <div class="counter" data-target="150">0</div>
+    <div class="metric-label">Clients Served</div>
+  </div>
+  <div class="metric">
+    <div class="counter" data-target="98">0</div>
+    <div class="metric-label">% Satisfaction</div>
+  </div>
+  <div class="metric">
+    <div class="counter" data-target="40">0</div>
+    <div class="metric-label">% Cost Reduction</div>
+  </div>
+</div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Our Services</h2>
+        <p>Comprehensive Business Intelligence and Analytics Solutions</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Data Collection & Processing</h3>
+            <p>We automate data collection and transform raw data into clean, structured formats ready for analysis through web scraping, APIs, IoT sensors, and biometric systems.</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Data Cleaning & Transformation</li>
+              <li><i class="fas fa-check text-success me-2"></i> Data Integration</li>
+              <li><i class="fas fa-check text-success me-2"></i> ETL Pipelines</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Data Visualization & Reporting</h3>
+            <p>Transform complex data into intuitive dashboards and reports that communicate insights effectively to stakeholders at all levels of your organization.</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Interactive BI Dashboards</li>
+              <li><i class="fas fa-check text-success me-2"></i> Automated Reporting</li>
+              <li><i class="fas fa-check text-success me-2"></i> Geospatial Analytics</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Predictive & Prescriptive Analytics</h3>
+            <p>Move beyond historical analysis with AI-powered models that forecast future trends and recommend optimal business strategies.</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Predictive Modelling</li>
+              <li><i class="fas fa-check text-success me-2"></i> Prescriptive Analytics</li>
+              <li><i class="fas fa-check text-success me-2"></i> Sentiment Analysis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Market & Consumer Insights</h3>
+            <p>Understand your customers and market dynamics with deep analytics that reveal purchasing behaviors, preferences, and emerging trends.</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Customer Segmentation</li>
+              <li><i class="fas fa-check text-success me-2"></i> Market Trend Analysis</li>
+              <li><i class="fas fa-check text-success me-2"></i> Competitor Benchmarking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <h3>Financial & Risk Analysis</h3>
+            <p>Protect your assets and optimize financial performance with advanced risk analytics and forecasting models.</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Credit Risk Analysis</li>
+              <li><i class="fas fa-check text-success me-2"></i> Financial Forecasting</li>
+              <li><i class="fas fa-check text-success me-2"></i> Investment Risk Assessment</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Performance Monitoring</h3>
+            <p>Track KPIs and measure program effectiveness with real-time dashboards and customized evaluation frameworks.</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> KPI Development & Tracking</li>
+              <li><i class="fas fa-check text-success me-2"></i> Program Impact Evaluation</li>
+              <li><i class="fas fa-check text-success me-2"></i> Real-Time Dashboards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add to Services Section -->
+<div class="col-12 mt-5 animate-on-scroll">
+  <div class="viz-preview">
+    <h3 class="text-center mb-4">Interactive Dashboard Preview</h3>
+    <div class="viz-container">
+      <div class="viz-nav">
+        <button class="viz-btn active" data-viz="sales">Sales Analytics</button>
+        <button class="viz-btn" data-viz="financial">Financial Metrics</button>
+        <button class="viz-btn" data-viz="customer">Customer Insights</button>
+      </div>
+      <div class="viz-content">
+        <div class="viz-panel active" id="sales-viz">
+          <img src="assets/sales-dashboard.png" alt="Sales Dashboard" class="img-fluid shadow">
+        </div>
+        <div class="viz-panel" id="financial-viz">
+          <img src="assets/financial-dashboard.png" alt="Financial Dashboard" class="img-fluid shadow">
+        </div>
+        <div class="viz-panel" id="customer-viz">
+          <img src="assets/customer-dashboard.png" alt="Customer Dashboard" class="img-fluid shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Industries Section -->
+  <section id="industries" class="industries">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Industries We Serve</h2>
+        <p>Tailored Analytics Solutions for Key Sectors</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="industry-card animate-on-scroll">
+            <div class="industry-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <h3>Financial Services</h3>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check me-2"></i> Credit risk modeling</li>
+              <li><i class="fas fa-check me-2"></i> Fraud detection systems</li>
+              <li><i class="fas fa-check me-2"></i> Portfolio optimization</li>
+              <li><i class="fas fa-check me-2"></i> Regulatory compliance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="industry-card animate-on-scroll">
+            <div class="industry-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>Retail & Consumer</h3>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check me-2"></i> Customer segmentation</li>
+              <li><i class="fas fa-check me-2"></i> Market basket analysis</li>
+              <li><i class="fas fa-check me-2"></i> Dynamic pricing strategies</li>
+              <li><i class="fas fa-check me-2"></i> Consumer sentiment analysis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="industry-card animate-on-scroll">
+            <div class="industry-icon">
+              <i class="fas fa-tractor"></i>
+            </div>
+            <h3>Agriculture</h3>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check me-2"></i> Precision farming solutions</li>
+              <li><i class="fas fa-check me-2"></i> Climate impact assessments</li>
+              <li><i class="fas fa-check me-2"></i> Smart irrigation analytics</li>
+              <li><i class="fas fa-check me-2"></i> Market price forecasting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitive Advantages Section -->
+  <section class="advantages">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Our Competitive Advantages</h2>
+        <p>Why Choose B$E Metricsphere for Your Business Intelligence Needs</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="advantage-item animate-on-scroll">
+            <div class="advantage-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="advantage-content">
+              <h3>Specialized Expertise</h3>
+              <p>Unique integration of biometrics and econometrics with business intelligence for more accurate risk assessments and decision-making models.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="advantage-item animate-on-scroll">
+            <div class="advantage-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="advantage-content">
+              <h3>Customized Solutions</h3>
+              <p>Tailor-made analytics solutions designed specifically for your industry, operational goals, and market challenges.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="advantage-item animate-on-scroll">
+            <div class="advantage-icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="advantage-content">
+              <h3>Cutting-Edge Technology</h3>
+              <p>AI, machine learning, and cloud-based BI platforms that deliver high-performance, scalable analytics solutions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="advantage-item animate-on-scroll">
+            <div class="advantage-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="advantage-content">
+              <h3>Local Market Understanding</h3>
+              <p>Deep expertise in Kenya's business landscape, regulatory environment, and consumer behavior patterns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>What Our Clients Say</h2>
+        <p>Success Stories from Organizations We've Empowered</p>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div id="testimonialCarousel" class="carousel slide animate-on-scroll" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial-card">
+                  <div class="quote">
+                    "B$E Metricsphere's predictive analytics transformed our inventory management, reducing stockouts by 40% while decreasing excess inventory by 25%. Their insights have become indispensable to our operations."
+                  </div>
+                  <div class="client-info">
+                    <div class="client-img">
+                      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
+                    </div>
+                    <div class="client-details">
+                      <h5>Sarah Mwangi</h5>
+                      <p>COO, Retail Chain</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-card">
+                  <div class="quote">
+                    "The custom BI dashboard developed by B$E Metricsphere has given our executive team real-time visibility into performance metrics across all branches. Decision-making is now faster and more data-driven than ever before."
+                  </div>
+                  <div class="client-info">
+                    <div class="client-img">
+                      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                    </div>
+                    <div class="client-details">
+                      <h5>James Omondi</h5>
+                      <p>CEO, Financial Services</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Get In Touch</h2>
+        <p>Ready to Transform Your Data Into Strategic Insights?</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="contact-info animate-on-scroll">
+            <h3>Contact Information</h3>
+            <p>Have questions about our services or want to discuss how we can help your organization? Reach out to us through any of these channels.</p>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Location</h4>
+                <p>Nairobi, Kenya</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Email</h4>
+                <p>info@b$emetricsphere.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Phone</h4>
+                <p>+254 726 830709</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form class="contact-form animate-on-scroll" id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Subject">
+            <textarea class="form-control" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-about">
+            <a href="#" class="footer-logo">B$E Metricsphere</a>
+            <p>Empowering organizations across Africa with cutting-edge Business Intelligence and Analytics solutions that drive efficiency, productivity, and sustainable growth.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-links">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Data Collection</a></li>
+              <li><a href="#">Data Visualization</a></li>
+              <li><a href="#">Predictive Analytics</a></li>
+              <li><a href="#">Market Insights</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-links">
+            <h3>Industries</h3>
+            <ul>
+              <li><a href="#">Financial Services</a></li>
+              <li><a href="#">Retail</a></li>
+              <li><a href="#">Agriculture</a></li>
+              <li><a href="#">Healthcare</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-links">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter for the latest insights and updates in business intelligence.</p>
+            <form class="newsletter-form">
+              <input type="email" class="form-control mb-2" placeholder="Your Email">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 B$E Metricsphere. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.querySelector('nav').classList.toggle('navbar-light');
+      document.querySelector('nav').classList.toggle('bg-light');
+      document.querySelector('nav').classList.toggle('navbar-dark');
+      document.querySelector('nav').classList.toggle('bg-dark');
+      
+      // Save preference to localStorage
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+
+    // Check for saved dark mode preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      document.querySelector('nav').classList.add('navbar-dark', 'bg-dark');
+      document.querySelector('nav').classList.remove('navbar-light', 'bg-light');
+    }
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Back to top button
+    const backToTopButton = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('active');
+      } else {
+        backToTopButton.classList.remove('active');
+      }
+    });
+
+    backToTopButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Animation on scroll
+    function animateOnScroll() {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      const windowHeight = window.innerHeight;
+      
+      elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        if (elementPosition < windowHeight - 100) {
+          element.classList.add('animated');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      this.reset();
+    });
+
+    // Initialize carousel
+    const testimonialCarousel = new bootstrap.Carousel(document.getElementById('testimonialCarousel'), {
+      interval: 5000
+    });
+  </script>
+</body>
+</html>
